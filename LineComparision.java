@@ -21,5 +21,16 @@ public class LineComparision {
         len2 = Math.sqrt((x12 - x11) * (x12 - x11) + (y12 - y11) * (y12 - y11));
         System.out.println("Distance of Length1: " + len1);
         System.out.println("Distance of Length2: " + len2);
+        LineComparision line = new LineComparision();
+        line.equal(len1, len2);
+    }
+    //Check equal length using equal method
+    public static void equal(Double len1,Double len2) {
+        if (len1.equals(len2)) {
+            System.out.println("length is equal");
+        }
+        else {
+            System.out.println("lenght is  not equal");
+        }
     }
 }
