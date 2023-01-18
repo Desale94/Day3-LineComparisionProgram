@@ -24,6 +24,7 @@ public class LineComparision {
         System.out.println("Distance of Length2: " + len2);
         LineComparision line = new LineComparision();
         line.equal(len1, len2);
+        line.compare(len1,len2);
     }
         //check equal length using equal method
         public static void equal(Double len1,Double len2) {
@@ -34,5 +35,17 @@ public class LineComparision {
                 System.out.println("lenght is  not equal");
             }
         }
+        //compare length using compare method
+    public static void compare(Double len1,Double len2){
+        if(len1.compareTo(len2)>0){
+            System.out.println("len1>len2");
+        }
+        else if (len1.compareTo(len2)==0) {
+            System.out.println("len1=len2");
+        }
+        else {
+            System.out.println("len1<len2");
+        }
     }
+}
 
